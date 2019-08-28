@@ -90,12 +90,10 @@ function classEmedias(valorFre, k, Ac, n) {
             f = 0;
             console.log("Ac")
             console.log(Ac)
-            
+
             aux = parseFloat(clas) + parseFloat(Ac);
             aux = x ? x : aux;
-            if(i == (k-2)){
-                aux = parseFloat(valorFre[valorFre.length - 1][0]);
-            }
+
             ar[i] = clas.toFixed(2) + " |-- " + aux.toFixed(2);
             for (var j = 0; j < valorFre.length; j++) {
                 if (parseFloat(valorFre[j][0]) >= clas && parseFloat(valorFre[j][0]) <= aux) {
@@ -123,7 +121,7 @@ function classEmedias(valorFre, k, Ac, n) {
             if (i == k - 2) {
                 aux = parseFloat(clas) + parseFloat(Ac);
                 if (aux <= valorFre[valorFre.length - 1][0]) {
-                    var x = aux;
+                    var x = parseFloat(valorFre[valorFre.length - 1][0]);
                     // var x = Math.round(aux);
                 } else {
                     var x = aux;
