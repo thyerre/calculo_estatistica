@@ -88,12 +88,25 @@ function classEmedias(valorFre, k, Ac, n) {
         if (clas <= valorFre[valorFre.length - 1][0]) {
 
             f = 0;
+            console.log("Ac")
+            console.log(Ac)
+            
             aux = parseFloat(clas) + parseFloat(Ac);
             aux = x ? x : aux;
+            if(i == (k-2)){
+                aux = parseFloat(valorFre[valorFre.length - 1][0]);
+            }
             ar[i] = clas.toFixed(2) + " |-- " + aux.toFixed(2);
-
             for (var j = 0; j < valorFre.length; j++) {
                 if (parseFloat(valorFre[j][0]) >= clas && parseFloat(valorFre[j][0]) <= aux) {
+                    // console.log("valorFre")
+                    // console.log(valorFre)
+                    // console.log("valorFre[j][1]")
+                    // console.log(valorFre[j][1])
+                    // console.log("clas")
+                    // console.log(clas)
+                    // console.log("aux")
+                    // console.log(aux)
                     f += parseInt(valorFre[j][1]);
                 }
             }
@@ -125,6 +138,7 @@ function classEmedias(valorFre, k, Ac, n) {
     ar['percentagem'] = per;
     console.log(ar);
     console.log(valorFre);
+    console.log("ESTAMOS EM TESTE, AJUDE A CONTINUAR O PROJETO! TODO CONHECIMENTO É BOM :)");
     return ar;
 
 }
