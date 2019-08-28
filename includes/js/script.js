@@ -178,7 +178,7 @@ function montarTabela(valorFre, k, At, Ac, n) {
     var element = document.getElementById('tabela2div');
     element.innerHTML = tabela2;
     var element = document.getElementById('calh3');
-    element.innerHTML = "Calculo";
+    // element.innerHTML = "Calculo";
     return tabela;
 }
 
