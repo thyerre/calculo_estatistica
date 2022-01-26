@@ -10,7 +10,7 @@
         
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-large">
             <?php
                 require_once "navBar.php";
             ?>
